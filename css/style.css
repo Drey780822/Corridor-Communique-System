@@ -1,0 +1,116 @@
+/* style.css */
+
+/* Root Variables */
+:root {
+    --primary-green: #2E7D32;
+    --secondary-gray: #B0BEC5;
+    --accent-yellow: #FFCA28;
+    --text-dark: #212121;
+    --error-red: #EF5350;
+}
+
+/* General */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: #F5F5F5;
+}
+
+/* Navbar */
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-green) !important;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: var(--accent-yellow) !important;
+    border-bottom: 2px solid var(--accent-yellow);
+}
+/* Header */
+header {
+    background: linear-gradient(180deg, var(--primary-green), var(--secondary-gray));
+    color: white;
+    padding: 4rem 0;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+header .btn-primary {
+    background-color: var(--accent-yellow);
+    color: white;
+    border: none;
+}
+header .btn-primary:hover {
+    background-color: #FFB300;
+}
+
+/* Communique Cards */
+.card {
+    border: 1px solid var(--secondary-gray);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card-title {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+.urgency-urgent {
+    background-color: var(--error-red);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+.urgency-normal {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+.card-text small {
+    font-style: italic;
+}
+
+/* Forms */
+.form-control {
+    border: 1px solid var(--secondary-gray);
+}
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+.btn-primary {
+    background-color: var(--accent-yellow);
+    border: none;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #FFB300;
+}
+.text-error {
+    color: var(--error-red);
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 1.5rem 0;
+}
+footer .text-accent {
+    color: var(--accent-yellow);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header {
+        padding: 2rem 0;
+    }
+}
